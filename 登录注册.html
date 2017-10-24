@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>电商网站-登录注册-Primes</title>
+	<link type="text/css" rel="stylesheet" href="main.css">
+	<script type="text/javascript" src="jquery-1.8.3.min.js"/></script>
+</head>
+<body>
+	<div class="lr-bg">
+		<div class="comwidth">
+			<div class="lr-logo fl">
+				<img src="./img/mook-logo.jpg" alt="logo">
+			</div>
+
+			<div class="lr-main fr">
+				
+				<div class="login-box">
+					<p class="lr-title login-title">账号登录<a href="#" onclick="SwiftLr()">免费注册</a></p>
+					<form action="">
+						<label>
+							<input class="bg-user" type="text" placeholder="用户名/电话/电子邮箱">
+							<input class="bg-pass" type="text" placeholder="密码">
+						</label>
+						<div class="lr-checkbox login-checkbox">
+							<input type="checkbox" id="login-auto"><label for="login-auto">自动登录</label>
+							<input type="checkbox" id="login-kong"><label for="login-kong">安全控件登录</label>
+							<a href="#">忘记密码？</a>
+						</div>
+						<label>
+							<button type="submit" class="lr-btn">登&nbsp;&nbsp;录</button>
+						</label>
+					</form>
+					<div class="login-other">
+						<h2>使用合作网站账号登陆：</h2>
+						<ul>
+							<li><a href="#">QQ</a></li>
+							<li><a href="#">网易</a></li>
+							<li><a href="#">人人</a></li>
+							<li><a href="#">开心</a></li>
+							<li><a href="#">豆瓣</a></li>
+							<li><a href="#">搜狐</a></li>
+							<li><a href="#">更多》</a></li>
+						</ul>
+					</div>
+				</div><!-- login-box end -->
+
+				<div class="register-box hide">
+					<p class="lr-title register-title">填写注册信息<a href="#" onclick="SwiftLr()">我有账号，去登录</a></p>
+					<form>
+						<label class="register-form">
+							<div>
+								<input class="bg-user" type="text" placeholder="用户名">
+								<h4 class="sas-hide">4-10位汉字、字母、数字组合</h4>
+							</div>
+							<div>
+								<input class="bg-mail" type="text" placeholder="个人邮箱">
+								<h4 class="sas-hide">G-mail、QQ mail等</h4>
+							</div>
+							<div>
+								<input class="bg-pass" type="text" placeholder="密码">
+								<h4 class="sas-hide">8-16位数字、字母组合</h4>
+							</div>
+							<div>
+								<input class="bg-location" type="text" placeholder="联系地址">
+								<h4 class="sas-hide">详细地址，以便联系</h4>
+							</div>
+							<div>
+								<input class="bg-pass" type="text" placeholder="密码确认">
+								<h4 class="sas-hide">请再一次输入设置的密码</h4>
+							</div>
+							<div>
+								<input class="bg-phone" type="text" placeholder="联系电话">
+								<h4 class="sas-hide">个人号码，以便验证身份</h4>
+							</div>
+							
+						</label>
+						<label class="lr-checkbox register-checkbox">
+							<input type="checkbox"><span>我已阅读并同意《<a href="#">用户注册协议</a>》</span>
+						</label>
+						<label>
+							<button type="submit" class="lr-btn">确认注册</button>
+						</label>
+					</form>
+				</div><!-- register-box end -->
+
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="dixia">
+			<div class="comwidth">
+			<p><a href="#">慕课简介</a>|<a href="#">慕课公告</a>|<a href="#">招纳贤士</a>|<a href="#">联系我们</a>|<a href="#">客服热线：400-675-1234</a></p>
+			<h5>Copyright © 2006 - 2014 慕课版权所有   京ICP备09037834号   京ICP证B1034-8373号   某市公安局XX分局备案编号：123456789123</h5>
+			<div class="trust-box">
+				<img src="img/trust.png" alt="图片"/><img src="img/trust.png" alt="图片"/><img src="img/trust.png" alt="图片"/><img src="img/trust.png" alt="图片"/>
+			</div>
+		</div>
+	</div><!-- dixia end -->
+</body>
+
+<script type="text/javascript">
+	window.onload = function(){
+		$(".register-form input").focus(function(){
+			$(this).next().removeClass("sas-hide");
+		});
+		$(".register-form input").blur(function(){
+			$(this).next().addClass("sas-hide");
+		});
+	};
+
+	function SwiftLr(){
+		var boxW = $(".lr-main").outerWidth();
+				if(boxW <= 400){
+					$(".login-box").fadeOut(300);
+					$(".lr-main").animate({width:"740px"},600,function(){
+						$(".register-box").fadeIn(600);
+					});
+				}
+				else{
+					$(".register-box").fadeOut(300);
+					$(".lr-main").animate({width:"370px"},600,function(){
+						$(".login-box").fadeIn(600);
+					});
+				}
+	}
+</script>
+
+
+
+</html>

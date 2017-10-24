@@ -1,0 +1,471 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>电商网站-详情页-Primes</title>
+	<link type="text/css" rel="stylesheet" href="main.css">
+	<script type="text/javascript" src="jquery-1.8.3.min.js"/></script>
+</head>
+<body>
+	<div class="head">
+
+		<div class="topbar">
+			<div class="comwidth">
+				<div class="top-left fl"><a href="#">收藏本站</a></div>
+				<div class="top-right fr">欢迎来到慕课网!<a href="#">[登陆]</a><a href="#">[免费注册]</a></div>
+			</div>
+		</div><!-- topbar结束 --> 
+
+		<div class="logobar">
+			<div class="comwidth">
+				<div class="logo fl">
+					<a href="#"><img src="img/mook-logo.jpg" alt="慕课网"/></a>
+				</div>
+				<div class="search-box fl">
+					<input type="text" class="search-text fl">
+					<input type="button" class="search-btn fr" value="搜 索">
+					</div>
+				<div class="buycar fr">
+					<span class="buycar-text fl">购物车</span>
+					<span class="buycar-num fr">0</span>
+				</div>
+			</div>
+		</div><!-- logobar end -->
+		
+		<div class="toplist">
+			<div class="comwidth">
+				<div class="shoplist fl">
+					<h3>全部商品分类</h3>
+					<div class="alllist hide">
+						<dl class="alllist-item">
+							<dt>
+								<a href="#" class="b">手机</a>
+								<a href="#" class="b">数码</a>
+								<a href="#" class="list-choice">合约机</a></dt>
+							<dd>
+								<a href="#">荣耀3X</a>
+								<a href="#">单反</a>
+								<a href="#">智能设备</a></dd>
+						</dl>
+						<dl class="alllist-item alllist_active">
+							<dt>
+								<a href="#" class="b">电脑</a>
+								<a href="#" class="b">硬件外设</a>
+								<a href="#" class="list-choice">装机宝</a></dt>
+							<dd>
+								<a href="#">笔记本</a>
+								<a href="#">台式机</a>
+								<a href="#">超极本</a>
+								<a href="#">平板</a></dd>
+						</dl>
+						<dl class="alllist-item">
+							<dt>
+								<a href="#" class="b">大家电</a></dt>
+							<dd>
+								<a href="#">电视</a>
+								<a href="#">冰箱</a>
+								<a href="#">空调</a>
+								<a href="#">洗衣机</a></dd>
+						</dl>
+						<dl class="alllist-item">
+							<dt>
+								<a href="#" class="b">厨房电器</a>
+								<a href="#" class="b">生活电器</a></dt>
+							<dd>
+								<a href="#">空气净化器</a>
+								<a href="#">微波炉</a>
+								<a href="#">取暖设备</a></dd>
+						</dl>
+						<dl class="alllist-item">
+							<dt>
+								<a href="#" class="b">饮品/饮料/生鲜</a>
+								<a href="#" class="list-choice">粮油</a></dt>
+							<dd>
+								<a href="#">进口</a>
+								<a href="#">方便面</a>
+								<a href="#">零售</a>
+								<a href="#">保健</a></dd>
+						</dl>
+					</div><!-- alllist end -->
+
+					<div class="classlist hide">
+						<dl class="classlist-box">
+							<dt>
+								<h4><a href="#">电脑整机</a></h4>
+								<div class="littlelist">
+									<a href="#">笔记本</a><a href="#" class="b">超级本</a><a href="#">上网本</a><a href="#">平板电脑</a><a href="#">台式机</a>
+								</div>
+							</dt>
+							<dt>
+								<h4><a href="#">装机配件</a></h4>
+								<div class="littlelist">
+									<a href="#">CPU</a><a href="#">硬盘</a><a href="#">SSD固态硬盘</a><a href="#">内存</a><a href="#">显示器</a><a href="#">智能显示器</a><a href="#">主板</a><a href="#">显卡</a><a href="#">机箱</a><a href="#">电源</a><a href="#">散热器</a><a href="#">刻录机/光驱</a><a href="#">声卡</a><a href="#">拓展卡</a><a href="#">服务器配件</a><a href="#">DIY小附件</a><a href="#">装机/配件安装</a>
+								</div>
+							</dt>
+							<dt>
+								<h4><a href="#">整机附件</a></h4>
+								<div class="littlelist">
+									<a href="#">电脑包</a><a href="#">电脑桌</a><a href="#">电池</a><a href="#">电源适配器</a><a href="#">贴膜</a><a href="#">清洁用品</a><a href="#">笔记本散热器</a><a href="#">USB拓展</a><a href="#">平板配件</a><a href="#">特色附件</a><a href="#">插座网线/电话线</a><a href="#">影音线材</a><a href="#">电脑线材</a>
+								</div>
+							</dt>
+							<dt>
+								<h4><a href="#">电脑外设</a></h4>
+								<div class="littlelist">
+									<a href="#">鼠标</a><a href="#">键盘</a><a href="#">游戏外设</a><a href="#">移动硬盘</a><a href="#">摄像头</a><a href="#">高清播放器</a><a href="#">外置盒</a><a href="#">移动硬盘包</a><a href="#">手写板/绘图板</a>
+								</div>
+							</dt>
+							<dt>
+								<h4><a href="#">网络设备</a></h4>
+								<div class="littlelist">
+									<a href="#">路由器</a><a href="#">网卡</a><a href="#">3G无线上网</a><a href="#">交换机</a><a href="#">网络存储</a><a href="#">布线工具</a><a href="#">网络配件</a><a href="#">正版软件</a>
+								</div>
+							</dt>
+							<dt>
+								<h4><a href="#">音频设备</a></h4>
+								<div class="littlelist">
+									<a href="#">音箱</a><a href="#">耳机/耳麦</a><a href="#">麦克风</a><a href="#">声卡</a><a href="#">音频附件</a><a href="#">录音笔</a>
+								</div>
+							</dt>
+						</dl>
+						<div class="otherclass"><a href="#">电脑整机频道</a><a href="#">硬件/外设频道</a></div>
+					</div><!-- classlist end -->
+				</div><!-- shoplist end -->
+				<ul class="Navigation-bar">	
+					<li><a href="#" class="active">数码城</a></li>
+					<li><a href="#">天黑黑</a></li>
+					<li><a href="#">团购</a></li>
+					<li><a href="#">发现</a></li>
+					<li><a href="#">二手特卖</a></li>
+					<li><a href="#">名品会</a></li>
+				</ul>
+			</div>
+		</div><!-- toplist end -->
+
+	</div><!-- head end -->
+
+
+	<div class="main comwidth">
+		<div class="toparea comwidth">
+			<div class="step">
+				<a href="#" style="font-weight: bold;">首页 > </a>
+				<a href="#"> 平板电脑 ></a>
+				<a href="#"> 平板电脑 ></a>
+				<a href="#"> Apple 苹果 ></a>
+				<a href="#"> MD531CH/A</a>
+			</div>
+			
+
+			<div class="item-show">
+				<div class="showleft fl">
+					 <img src="img/ipadbig.jpg" alt="ipad" class="big-img">
+					 <ul>
+					 	<li class="choic"><img src="img/ipadbig.jpg" alt="ipad"></li>
+					 	<li><img src="img/ipadbig.jpg" alt="ipad"></li>
+					 	<li><img src="img/ipadbig.jpg" alt="ipad"></li>
+					 	<li><img src="img/ipadbig.jpg" alt="ipad"></li>
+					 	<li><img src="img/ipadbig.jpg" alt="ipad"></li>
+					 </ul>
+				</div>
+				<div class="showright fr">
+					<p class="title">全网底价 Apple 苹果 iPad mini 16G wifi版 平板电脑 前白后银 MD531CH/A 银白两色生产批次不同混合发货</p>
+					<ul>
+						<li class="jiage">
+							<h3>慕课价</h3>
+							<div>
+								<p><span style="font-size: 10px;">￥</span>1999.00</p>
+							</div>
+						</li>
+						<li class="youhui">
+							<h3>优惠</h3>
+							<div>
+								<p>购ipad加价优惠够配件或USB充电插座</p>
+							</div>
+						</li>
+						<li class="songdao">
+							<h3>送到</h3>
+							<div>
+								<input type="button" value="北京市 海淀区 五环内">
+								<p>有货，可当日出库</p>
+							</div>
+						</li>
+						<li class="yanse">
+							<h3>选择颜色</h3>
+							<div>
+								<input type="button" value="白色" class="active">
+								<input type="button" value="黑色">
+								<input type="button" value="灰色">
+							</div>
+						</li>
+						<li class="guige">
+							<h3>选择规格</h3>
+							<div>
+								<input type="button" value="WIFI 16G" class="active">
+								<input type="button" value="WIFI 32G">
+								<input type="button" value="WIFI 64G">
+								<input type="button" value="Cellular 16G">
+								<input type="button" value="Cellular 32G">
+								<input type="button" value="Cellular 64G">
+							</div>
+						</li>
+						<li class="shuliang">
+							<h3>数量</h3>
+							<div class="buynumb">
+								<input type="button" value="-" class="btn"><input type="text" class="numb" value="1"><input type="button" value="+" class="btn">
+								<p>限购<span style="color: #FE8900;font-weight: bold;">9</span>件</p>
+							</div>
+						</li>
+					</ul>
+
+					<p class="yixuanze floatfix">已选择 <span>“<span id='Xyanse'>白色</span>-<span id='Xguige'>WIFI 16G</span>”</span></p>
+
+					<div class="add-buy">
+						<input type="button" value="加入购物车"><input type="button" value="立即购买">
+					</div>
+
+					<p class="zhuyi">注意：此商品可提供普通发票，不提供增值税发票。</p>
+				</div>
+
+				
+			</div>
+		</div><!-- toparea end -->
+
+
+
+		<div class="leftarea fl">
+			<div class="details-left details-tongjia">
+				<h3>同价位</h3>
+				<ul>
+					<li>
+						<img src="img/tuijianimg.jpg" alt="tuijianimg">
+						<a href="#">Samsung 三星 GALAXY Tab 3 8.0 WLAN版本 T310平板电话</a>
+						<h4>¥3588.00</h4>
+					</li>
+					<li>
+						<img src="img/tuijianimg.jpg" alt="tuijianimg">
+						<a href="#">Samsung 三星 GALAXY Tab 3 8.0 WLAN版本 T310平板电话</a>
+						<h4>¥3588.00</h4>
+					</li>
+					<li>
+						<img src="img/tuijianimg.jpg" alt="tuijianimg">
+						<a href="#">Samsung 三星 GALAXY Tab 3 8.0 WLAN版本 T310平板电话</a>
+						<h4>¥3588.00</h4>
+					</li>
+					<li>
+						<img src="img/tuijianimg.jpg" alt="tuijianimg">
+						<a href="#">Samsung 三星 GALAXY Tab 3 8.0 WLAN版本 T310平板电话</a>
+						<h4>¥3588.00</h4>
+					</li>
+				</ul>
+			</div>
+
+			<div class="details-left">
+				<h3>看了最终买</h3>
+				<ul>
+					<li>
+						<img src="img/tuijianimg.jpg" alt="tuijianimg">
+						<a href="#">Samsung 三星 GALAXY Tab 3 8.0 WLAN版本 T310平板电话</a>
+						<h4>¥3588.00</h4>
+					</li>
+					<li>
+						<img src="img/tuijianimg.jpg" alt="tuijianimg">
+						<a href="#">Samsung 三星 GALAXY Tab 3 8.0 WLAN版本 T310平板电话</a>
+						<h4>¥3588.00</h4>
+					</li>
+					<li>
+						<img src="img/tuijianimg.jpg" alt="tuijianimg">
+						<a href="#">Samsung 三星 GALAXY Tab 3 8.0 WLAN版本 T310平板电话</a>
+						<h4>¥3588.00</h4>
+					</li>
+				</ul>
+			</div><!-- details-left end -->
+		</div><!-- leftarea end -->
+		
+		<div class="rightarea fr">
+			<div class="details-right">
+				<div class="details-choose active">产品介绍</div>
+				<div class="details-choose">商品评价(12557)</div>
+				<div class="details-details floatfix">
+					<img src="./img/adimg.jpg" alt="adimg" class="adimg">
+					<div class="detailtitle">
+						<div class="dtbig">强烈建议</div>
+						<div class="dtlit">货比三家，选最优。</div>
+					</div>
+					<p>现在就是买mini的好时候！换代清仓直降，但苹果品质不变！A5双核，内置Lightning闪电接口，正反可插，方便人性。小身材，炫丽的7.9英寸显示屏，7.2mm的厚度，薄如铅笔。女生包包随身携带更时尚！facetime视频通话，与密友24小时畅聊不断线。微信倾力打造，你的智能助理。苹果的牌子就不用我说了，1111补仓，存货不多哦！</p>
+					<div class="detailtitle">
+						<div class="dtbig">精美图片</div>
+						<div class="dtlit"></div>
+					</div>
+					<p>苹果iPad7.9 英寸显示屏可带来新的iPad体验，绚丽的显示屏，在每一寸画面中呈现灵动鲜活的美妙影像。</br>苹果miniMD528CH/A采用500 万像素 iSight 摄像头，清晰记录每一次的幸福。</p>
+					<img src="./img/itemdetail.jpg" alt="itemdetail" class="itemdetail">
+
+				</div>
+				<div class="details-comment floatfix hide">
+					<div class="details-score">
+						<h3>商品评价</h3>
+						<div class="score-box">
+							<div class="score fl">4.7<span>分</span></div>
+							<div class="manyidu fl">
+								<h4>4.7</h4>
+								<ul>
+									<li>非常不满意</li>
+									<li>不满意</li>
+									<li>一般</li>
+									<li>满意</li>
+									<li>非常满意</li>
+								</ul>
+								<p>共<span>18939</span>位慕课网友参与评分</p>
+							</div>	
+						</div>
+					</div>
+					<div class="details-user">
+						<div class="paixu">
+							<ul>
+								<li class="paixu-active">全部</li>
+								<li>满意(17490)</li>
+								<li>一般(549)</li>
+								<li>不满意(743)</li>
+							</ul>
+							<dl>
+								<dt class="paixu-choose">时间排序</dt>
+								<dt>推荐排序</dt>
+							</dl>
+						</div>
+						<dl class="commentlist">
+							<dt>
+								<div class="userimg fl">
+									<img src="./img/user.jpg" alt="user">
+									<h3><a href="#">61****42</a></h3>
+									<h4><a href="#">黄金会员</a></h4>
+								</div>
+								<div class="usercomment fl">
+									<h3 class="commenttime fr">2014-03-07 17:41:44</h3>
+									<div class="starbox fl">
+										<img src="./img/icon/star.jpg" alt="star">
+										<img src="./img/icon/star.jpg" alt="star">
+										<img src="./img/icon/star.jpg" alt="star">
+										<img src="./img/icon/star.jpg" alt="star">
+										<img src="./img/icon/star.jpg" alt="star">
+									</div>
+									<h4>5分 满意</h2>
+									<p>挺不错的。信赖慕课！挺不错的。信赖慕课！挺不错的。信赖慕课！挺不错的。信赖慕课！挺不错的。信赖慕课！挺不错的。信赖慕课！挺不错的。信赖慕课！挺不错的。信赖慕课！挺不错的。信</p>
+									<div class="dingcai fr floatfix"><a href="#">踩(0)</a><a href="#">顶(0)</a></div>
+								</div>
+							</dt>
+							<dt>
+								<div class="userimg fl">
+									<img src="./img/user.jpg" alt="user">
+									<h3><a href="#">61****42</a></h3>
+									<h4><a href="#">黄金会员</a></h4>
+								</div>
+								<div class="usercomment fl">
+									<h3 class="commenttime fr">2014-03-07 17:41:44</h3>
+									<div class="starbox fl">
+										<img src="./img/icon/star.jpg" alt="star">
+										<img src="./img/icon/star.jpg" alt="star">
+										<img src="./img/icon/star.jpg" alt="star">
+										<img src="./img/icon/star.jpg" alt="star">
+										<img src="./img/icon/star.jpg" alt="star">
+									</div>
+									<h4>5分 满意</h4>
+									<p>挺不错的。信赖慕课！挺不错的。信赖慕课！挺不错的。信赖慕课！挺不错的。信赖慕课！挺不错的。信赖慕课！挺不错的。信赖慕课！挺不错的。信赖慕课！挺不错的。信赖慕课！挺不错的。信</p>
+									<div class="dingcai fr"><a href="#">踩(0)</a><a href="#">顶(0)</a></div>
+								</div>
+							</dt>
+						</dl>
+						<div class="page" style="padding-right: 40px;text-align: right;">
+							<a href="#" class="numb">上一页</a><a href="#" class="numb active">1</a><a href="#" class="numb">2</a><a href="#" class="numb">3</a><a href="#" class="numb">4</a><a href="#" class="numb">5</a>
+							<span>…</span>
+							<a href="#" class="numb">1879</a><a href="#" class="numb">下一页</a>
+							<div>共1879页，到第<input type="text" value="1">页</div>
+							<input type="button" id="confirm" value="确定">
+						</div>
+					</div>
+				</div>
+			</div><!-- details-right end -->
+			<div class="question">
+				<div class="allquestion">
+					<h3>全部质询(705)</h3>
+					<a href="#">发表咨询</a>
+				</div>
+				<div class="questionbox">
+					<div class="tips">提示:因厂家更改产品包装、产地或者更换随机附件等没有任何提前通知，且每位咨询者购买情况、提问时间等不同，为此以下回复信息仅供参考！若由此给您带来不便请多多谅解，谢谢！</div>
+					<ul>
+						<li>
+							<div class="userimg fl">
+								<img src="./img/user2.jpg" alt="user">
+								<h3><a href="#">61****42</a></h3>
+								<h4><a href="#">黄金会员</a></h4>
+							</div>
+							<div class="userquestion fl">
+								<h3 class="commenttime fr">2014-03-07 17:41:44</h3>
+								<h4>[商品咨询]</h4>
+								<p>还能再便宜点么？</p>
+								<div class="answer"><span>慕课网回复：</span>您好，现在已经是活动价格了。</div>
+							</div>
+						</li>
+						<li>
+							<div class="userimg fl">
+								<img src="./img/user2.jpg" alt="user">
+								<h3><a href="#">61****42</a></h3>
+								<h4><a href="#">黄金会员</a></h4>
+							</div>
+							<div class="userquestion fl">
+								<h3 class="commenttime fr">2014-03-07 17:41:44</h3>
+								<h4>[商品咨询]</h4>
+								<p>还能再便宜点么？</p>
+								<div class="answer"><span>慕课网回复：</span>您好，现在已经是活动价格了。</div>
+							</div>
+						</li>
+					</ul>
+					<div class="page" style="padding-right: 40px;text-align: right;">
+							<a href="#" class="numb">上一页</a><a href="#" class="numb active">1</a><a href="#" class="numb">2</a><a href="#" class="numb">下一页</a>
+							<div>共2页，到第<input type="text" value="1">页</div>
+							<input type="button" id="confirm" value="确定">
+						</div>
+				</div>
+			</div>
+		</div><!-- rightarea end -->
+
+ 
+	</div>
+	
+
+
+
+
+
+
+
+
+	<div class="dixia floatfix">
+			<div class="comwidth">
+			<p><a href="#">慕课简介</a>|<a href="#">慕课公告</a>|<a href="#">招纳贤士</a>|<a href="#">联系我们</a>|<a href="#">客服热线：400-675-1234</a></p>
+			<h5>Copyright © 2006 - 2014 慕课版权所有   京ICP备09037834号   京ICP证B1034-8373号   某市公安局XX分局备案编号：123456789123</h5>
+			<div class="trust-box">
+				<img src="img/trust.png" alt="图片"/><img src="img/trust.png" alt="图片"/><img src="img/trust.png" alt="图片"/><img src="img/trust.png" alt="图片"/>
+			</div>
+		</div>
+	</div><!-- dixia end -->
+</body>
+<script>
+	window.onload = function(){
+		$(".yanse input").click(function(){
+			$(".yanse input").removeClass('active');
+			$(this).addClass('active');
+			$("#Xyanse").html($(this).val());
+		});
+		$(".guige input").click(function(){
+			$(".guige input").removeClass('active');
+			$(this).addClass('active');
+			$("#Xguige").html($(this).val());
+		});
+
+
+		$(".details-choose").click(function(){
+			$(".details-choose").toggleClass('active');
+			$(".details-details").toggleClass('hide');
+			$(".details-comment").toggleClass('hide');
+		});
+	};
+</script>
+</html>
